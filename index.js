@@ -45,7 +45,7 @@ async function main() {
 
   // Copy existing file
   const existingSha = shas.find((sha) => existing.get(sha))
-  if (existingSha !== currentSha) {
+  if (existingSha && existingSha !== currentSha) {
     const Key = [currentSha, component].join('/')
     const CopySource = [Bucket, existing.get(existingSha)].join('/')
     console.log(`Copying s3://${CopySource} => s3://${Bucket}/${Key}`)
