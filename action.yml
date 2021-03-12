@@ -1,0 +1,19 @@
+name: 'Copy previous object'
+description: 'Copies s3 objects from previous commits'
+runs:
+  using: 'node12'
+  main: 'index.js'
+inputs:
+  component:
+    description: Which component to look for
+    required: true
+  s3Bucket:
+    description: Name of s3 bucket
+    required: true
+  maxCount:
+    description: Max commits to look for. Defaults to 20
+    required: false
+    default: '20'
+outputs:
+  s3Key:
+    description: s3 key that was copied
