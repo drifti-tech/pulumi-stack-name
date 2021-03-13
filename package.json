@@ -1,13 +1,11 @@
 {
-  "name": "copy-previous-s3",
+  "name": "pulumi-stack-name",
   "version": "1.0.0",
   "main": "index.js",
   "author": "Gudleik Rasch <gudleik@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "@actions/core": "^1.2.6",
-    "@actions/exec": "^1.0.4",
-    "@actions/github": "^4.0.0",
-    "aws-sdk": "^2.862.0"
+    "@actions/github": "^4.0.0"
   }
 }
