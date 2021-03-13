@@ -1,9 +1,8 @@
-name: 'Pulumi stack name'
-description: 'Determines pulumi stack name'
+name: Pulumi stack name
+description: Determines pulumi stack name
 runs:
-  using: 'node12'
-  main: 'index.js'
-inputs:
+  using: node12
+  main: index.js
 outputs:
   stackName:
     description: the suggested pulumi stack name
