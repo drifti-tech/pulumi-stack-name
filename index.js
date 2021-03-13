@@ -12,4 +12,7 @@ const branch =
 const prNumber = github.context.payload.pull_request && github.context.payload.pull_request.number
 
 const stackName = prNumber ? `pr-${prNumber}` : branch
+
+core.info(`Pulumi stack name is ${stackName}`)
+
 core.setOutput('stackName', stackName)
